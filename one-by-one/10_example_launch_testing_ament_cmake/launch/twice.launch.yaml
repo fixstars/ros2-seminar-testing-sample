@@ -1,0 +1,4 @@
+launch:
+- node:
+    pkg: example_launch_testing_ament_cmake
+    exec: twice

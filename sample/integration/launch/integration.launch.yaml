@@ -1,0 +1,13 @@
+launch:
+- node:
+    pkg: cpp_calc
+    exec: twice
+    remap:
+    - from: /dst
+      to: /calc_to_accum
+- node:
+    pkg: py_accum
+    exec: accum
+    remap:
+    - from: /src
+      to: /calc_to_accum
